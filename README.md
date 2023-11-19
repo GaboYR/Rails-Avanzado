@@ -101,5 +101,10 @@ con lo cual, ya estaría corregido.
 ![](https://github.com/GaboYR/Rails-Avanzado/blob/main/images/cap3.png)
 eso genera un archivo ruby con la fecha actual(mostrado en la imagen)
 
-2. 
-3. 
+2. Modificacion de los archivos moviegoer y routes.
+
+![](https://github.com/GaboYR/Rails-Avanzado/blob/main/images/cap4.png)
+
+Creacion de session_controllers y omniauth
+
+![](https://github.com/GaboYR/Rails-Avanzado/blob/main/images/cap5.png)
