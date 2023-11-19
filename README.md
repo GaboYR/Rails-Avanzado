@@ -94,3 +94,12 @@ Ahora verificamos que se haya corregido el nombre de la película:
 ![](https://github.com/GaboYR/Rails-Avanzado/blob/main/images/cap2.png)
 
 con lo cual, ya estaría corregido.
+
+## SSO y autenticación a través de terceros
+
+1. Ejecutamos **rails generate model Moviegoer name:string provider:string uid:string** seguido de **rake db:migrate**.
+![](https://github.com/GaboYR/Rails-Avanzado/blob/main/images/cap3.png)
+eso genera un archivo ruby con la fecha actual(mostrado en la imagen)
+
+2. 
+3. 
