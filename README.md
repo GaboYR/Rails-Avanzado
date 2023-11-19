@@ -76,3 +76,21 @@ Lo que vemos en el codigo es muy similar a las operaciones CRUD para una base de
 6. movie_params: funcion privada para que no haya modificacion directa, aplicacion del concepto de encapsulacion, dentro de esta tenemos un require y permit, los cuales permiten asegurar
    que solamente se permitan los parametros utilizados.
 
+Despues añadimos en la clase **movie** lo siguiente:
+```ruby
+class Movie < ActiveRecord::Base
+    before_save :capitalize_title
+    def capitalize_title
+        self.title = self.title.split(/\s+/).map(&:downcase).
+        map(&:capitalize).join(' ')
+    end
+end
+```
+Y agregamos 
+```ruby
+m = Movie.create!(:title => 'STAR  wars', :release_date => '27-5-1977', :rating => 'PG')
+```
+Ahora verificamos que se haya corregido el nombre de la película:
+![](https://github.com/GaboYR/Rails-Avanzado/blob/main/images/cap2.png)
+
+con lo cual, ya estaría corregido.
